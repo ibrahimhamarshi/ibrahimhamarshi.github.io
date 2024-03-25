@@ -83,8 +83,8 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       }).addTo(map);
     });
 
-     $.getJSON("Libraries_P.json", function(WC) {
-      L.geoJson(WC, {
+     $.getJSON("Libraries_P.json", function(LP) {
+      L.geoJson(LP, {
         pointToLayer: function(feature, latlng) {
           return L.circleMarker(latlng, {
             radius: 5,
