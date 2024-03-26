@@ -99,27 +99,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
           layer.on('click', function(e) {
             alert("Library Name: " + feature.properties.BUSNIESS_1);
           });
-         function handleSearch() {
-      const query = document.getElementById('search-input').value;
-      // Perform search logic here
-      alert('Search query: ' + query);
-    }
-
-  </script>
-
-  <!-- Search bar -->
-  <div id="search-container">
-    <input type="text" id="search-input" placeholder="Search..." />
-    <button onclick="handleSearch()">Search</button>
-  </div>
-
-  <!-- Legend -->
-  <div id="legend">
-    <h3>Legend</h3>
-    <p>Legend content goes here...</p>
-  </div>
-
-
+         
         }
       }).addTo(map);
     });
